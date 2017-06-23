@@ -86,9 +86,9 @@ p {
 .language-ruby {
 	font-size: 12px;
 }
-/*.full-width {
+.full-width {
 	width: 100%;
-}*/
+}
 .skills-and-tools {
 	max-width: 400px;
 	margin: 40px auto;
