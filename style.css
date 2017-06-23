@@ -1,0 +1,145 @@
+body{
+	margin: 0;
+	font-family: 'Philosopher', sans-serif;
+}
+h1{
+	color: white;
+	font-size: 50px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+h2{
+	color: white;
+	font-size: 18px;
+	margin-top: 0;
+}
+h3 {
+	text-align: center;
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+h4 {
+	text-align: center;
+	font-size: 24px;
+}
+p {
+	text-align: center;
+}
+.bio {
+	color: #FAD0B9;
+	font-size: 14px;
+	width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+}
+.git-link {
+	color: #FAD0B9;
+}
+.me {
+	height: 151px;
+	border-radius: 100%;
+	border-style: solid;
+	border-color: white;
+	margin-top: 40px;
+}
+.about {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.grey {
+	height: 3px;
+	background-color: #FAD0B9;
+	border: none;
+	width: 280px;
+}
+.about-container {
+	background: url('bg2.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 600px;
+}
+.Snippets-bar {
+	border-top: 5px double #BF0417;
+	width: 205px;
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+
+
+}
+.box {
+	float: left;
+	width: 42.5%;
+	margin-left: 5%;
+	margin-top: 60px;
+}
+.clear {
+	clear: both;
+}
+.language-ruby {
+	font-size: 12px;
+}
+/*.full-width {
+	width: 100%;
+}*/
+.skills-and-tools {
+	max-width: 400px;
+	margin: 40px auto;
+}
+.icons {
+	text-align: center;
+}
+.icon {
+	margin: 30px 0;
+}
+.contact-me {
+	height: 350px;
+	background: url('bg2.jpg') no-repeat center bottom fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 1px
+}
+.contact-headline {
+	color: white;
+}
+.contact-info {
+color: white;
+font-size: 13px;
+margin-top: 30px;
+}
+.contact-link {
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+}
+.nav-link {
+	color: white;
+	text-decoration: none;
+}
+li {
+	display: inline-block;
+	font-size: 12px;
+	width: 100px;
+	font-weight: bold;
+	margin-top: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	margin-left: 30px;
+}
+.hire-me {
+	border-style: solid;
+	border-color: white;
+}
+.link-bar {
+	text-align: center;
+}

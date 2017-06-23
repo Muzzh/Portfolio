@@ -1,0 +1,239 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,vietnamese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link 
+      rel="stylesheet"
+      href="prism-atom-dark.css"
+      type="text/css"
+      media="screen"
+    />
+    <script type="text/javascript" src="prism.js"></script>
+    <script type="text/javascript" src="prism.ruby.js"></script>
+    <title>Xavier Vanier</title>
+    <meta name="description" content="Xavier Vanier is a self-taught intermediate programmer. Over the last few months he has focused his efforts on learning python and currently trying the Firehose Project course.">
+  </head>
+
+  <body  link="#DEF55F">
+    <div class="about-container">
+    <ul class="link-bar">
+      <li><a href="#" class="nav-link">ABOUT</a></li>
+      <li><a href="#code-samples" class="nav-link">CODE SAMPLES</a></li>
+      <li><a href="#web-apps" class="nav-link">WEB APPS</a></li>
+      <li><a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
+      <li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+    </ul>
+      <div class="about">
+        <img src="profile_pic.jpg" class="me" />
+        <h1>Xavier Vanier</h1>
+        <h2>PROGRAMMER</h2>
+        <hr class="grey"/>
+        <p class="bio">
+          Xavier Vanier is a self-taught intermediate programmer. Over the last few months he has focused his efforts on learning python and applying his learned skills to two simple text applications as well as most of the coding challenges from the CodeFights website. His repositories can be visited <a href="https://github.com/Muzzh" class="git-link">here</a>. Currently trying the Firehose Project course, Xavier intends to pursue his learning in coding trough a bootcamp as well as his own projects.
+        </p>
+      </div>
+    </div>
+    <h3 id="code-samples">Code Snippets</h3>
+    <hr class="Snippets-bar">
+    <div class="box">
+      <h4>Temperature Conversion</h4>
+      <p>
+          This ruby program will prompt the user for a temperature
+          in degrees Celsius and let the user know what the
+          corresponding temperature is in Fahrenheit.
+      </p>
+    </div>
+    <div class="box">
+<pre><code class="language-ruby">def celsius_to_fahrenheit(celcius)
+  return (celcius * 9 / 5) + 32
+end
+
+puts &quot;Please indicate the temperature in Celsius you wish to convert: &quot;
+celcius = gets.to_i
+puts celsius_to_fahrenheit(celcius)</code></pre>
+    </div>
+    <br class="clear" />
+    <div class="box">
+<pre><code class="language-ruby">def suffix(user_input)
+  if (11..13).include?(user_input % 100)
+    return &quot;th&quot;
+  elsif last_digit(user_input) == 1
+    return &quot;st&quot;
+  elsif last_digit(user_input) == 2
+    return &quot;nd&quot;
+  elsif last_digit(user_input) == 3
+    return &quot;rd&quot;
+  else
+    return &quot;th&quot;
+  end
+end
+
+def last_digit(user_input)
+  return user_input % 10
+end
+
+puts &quot;Please enter a number: &quot;
+user_input = gets.chomp.to_i
+puts &quot;That's the #{user_input}#{suffix(user_input)} item!&quot;</code></pre>
+    </div>
+    <div class="box">
+      <h4>Ordinal Challenge</h4>
+        <p>
+          This ruby program will convert a plain number
+          to the ordinal of the number. So for example,
+          if the user enters 2, it will display 2nd, if
+          the user enters 3, it will display 3rd, etc.
+        </p>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <h4>Foobar</h4>
+      <p>
+        This ruby program is an adaptation of a classic technical
+        interview problem which displays sequences
+        of the Foobar pattern.
+    </div>
+    <div class="box">
+<pre><code class="language-ruby">def div_by_3(n)
+  return n % 3 == 0
+end
+
+def div_by_5(n)
+  return n % 5 == 0
+end
+
+current = 0
+puts &quot;How many items do you want to see?&quot;
+stop = gets.chomp.to_i
+
+while current &lt; stop
+  current += 1
+  if div_by_5(current) &amp;&amp; div_by_3(current)
+    puts &quot;Foobar&quot;
+  elsif div_by_3(current)
+    puts &quot;Foo&quot;
+  elsif div_by_5(current)
+    puts &quot;Bar&quot;
+  else
+    puts current
+  end
+end</code></pre>
+    </div>
+    <br class="clear" />
+    
+    <h3 id="web-apps">Web Apps</h3>
+    <hr class="Snippets-bar" />
+    <div class="box">
+      <h4>Quote Generator</h4>
+      <!--<img src="splurty.png" class="full-width" />-->
+      <p>
+        Coming soon !
+      </p>
+      <p>
+        A database-powered quote generator with a mobile-first
+        design, using the Ruby on Rails framework, HTML, and CSS
+        Uses Git and GitHub for version control, and launched
+        on Heroku.
+      </p>
+    </div>
+    <div class="box">
+      <h4>Yelp Clone</h4>
+      <!--<img src="nomster.png" class="full-width" />-->
+      <p>
+        Coming soon !
+      </p>
+      <p>
+        A Yelp clone that integrates with the Google Maps API
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+      </p>
+    </div>
+    <br class="clear" />
+
+    <div class="box">
+      <h4>Two-Sided Market Place</h4>
+      <!--<img src="flixter.png" class="full-width" />-->
+      <p>
+        Coming soon !
+      </p>
+      <p>
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+      </p>
+    </div>
+    <div class="box">
+      <h4>Test Driven Development</h4>
+      <!--<img src="grammable.png" class="full-width" />-->
+      <p>
+        Coming soon !
+      </p>
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+      </p>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <h4>Single Page Todo Application</h4>
+      <!--<img src="todoster.png" class="full-width" />-->
+      <p>
+        Coming soon !
+      </p>
+      <p>
+        This single-page to-do application features a
+        fluid user interface that– by using JavaScript–
+        allows users to rapidly add dynamic content.
+      </p>
+    </div>
+    <div class="box">
+      <h4>Agile Team Project</h4>
+      <!--<img src="chess.png" class="full-width" />-->
+      <p>
+        Coming soon !
+      </p>
+      <p>
+        Worked on an Agile software development team building
+        a chess application. Under the guidance of a senior software engineer,
+        we had weekly Agile team meetings for code reviews, sprint planning,
+        and feature assignments.
+      </p>
+    </div>
+    <br class="clear" />
+
+    <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+    <hr class="Snippets-bar" />
+    <p class="skills-and-tools">
+      Xavier has developed proficiency and expertise
+      in the following programming languages and
+      comfort with the following tools.
+    </p>
+    <div class="icons">
+      <!--<img src="github.png" class="icon" />
+      <img src="rubocop.png" class="icon" />
+      <img src="trello.png" class="icon" />
+      <img src="slack.png" class="icon" />
+      <img src="codeship.png" class="icon" />
+
+      <br class="clear" />
+      <img src="skills.png" class="icon" />-->
+      <img src="python-logo.png" class="icon" />
+    </div>
+
+    <div class="contact-me" id="hire-me">
+      <h3 class="contact-headline">Contact</h3>
+      <hr class="Snippets-bar" />
+      <p class="contact-info">
+        Currently entertaining new opportunities.
+        Please get in touch via email:
+      </p>
+      <p>
+        <a href="mailto.murdyn@gmail.com" class="contact-link">
+        murdyn@gmail.com
+        </a>
+      </p>
+    </div>
+  </body>
+
+</html>
