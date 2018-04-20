@@ -16,178 +16,32 @@
 
   <body  link="#DEF55F">
     <div class="about-container">
-    <ul class="link-bar">
-      <li><a href="#" class="nav-link">ABOUT</a></li>
-      <li><a href="#code-samples" class="nav-link">CODE SAMPLES</a></li>
-      <li><a href="#web-apps" class="nav-link">WEB APPS</a></li>
-      <li><a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
-      <li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
-    </ul>
+      <div class="full-width" id="nav">
+        <ul class="link-bar">
+          <li><a href="#" class="nav-link">ABOUT</a></li>
+          <li><a href="#web-apps" class="nav-link">WEB APPS</a></li>
+          <li><a href="#code-samples" class="nav-link">CODE SAMPLES</a></li>
+          <li><a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
+          <li class="hire-me"><a href="#hire-me" class="nav-link">CONTACT</a></li>
+        </ul>
+      </div>
       <div class="about">
         <img src="profile_pic.jpg" class="me" />
         <h1>Xavier Vanier</h1>
-        <h2>PROGRAMMER</h2>
+        <h2>SOFTWARE ENGINEER</h2>
         <hr class="grey"/>
         <p class="bio">
-          Xavier Vanier is a self-taught intermediate programmer. Over the last few months he has focused his efforts on learning python and applying his learned skills to two simple text applications as well as most of the coding challenges from the CodeFights website. His repositories can be visited <a href="https://github.com/Muzzh" class="git-link">here</a>. Currently trying the Firehose Project course, Xavier intends to pursue his learning in coding trough a bootcamp as well as his own projects.
+          Xavier Vanier started learning Python by himself two years ago, enjoying solving coding challenges.
+          Over the last few months, he has focused his efforts on Ruby on Rails developpement and applying his skills learned at <a href="https://thefirehoseproject.com" class="git-link">The Firehose Project</a> bootcamp. His repositories can be visited on <a href="https://github.com/Muzzh" class="git-link">Github</a>. 
         </p>
       </div>
     </div>
-    <h3 id="code-samples">Code Snippets</h3>
-    <hr class="Snippets-bar">
-    <div class="box">
-      <h4>Temperature Conversion</h4>
-      <p>
-          This ruby program will prompt the user for a temperature
-          in degrees Celsius and let the user know what the
-          corresponding temperature is in Fahrenheit.
-      </p>
-    </div>
-    <div class="box">
-<pre><code class="language-ruby">def celsius_to_fahrenheit(celcius)
-  return (celcius * 9 / 5) + 32
-end
-
-puts &quot;Please indicate the temperature in Celsius you wish to convert: &quot;
-celcius = gets.to_i
-puts celsius_to_fahrenheit(celcius)</code></pre>
-    </div>
-    <br class="clear" />
-    <div class="box">
-<pre><code class="language-ruby">def suffix(user_input)
-  if (11..13).include?(user_input % 100)
-    return &quot;th&quot;
-  elsif last_digit(user_input) == 1
-    return &quot;st&quot;
-  elsif last_digit(user_input) == 2
-    return &quot;nd&quot;
-  elsif last_digit(user_input) == 3
-    return &quot;rd&quot;
-  else
-    return &quot;th&quot;
-  end
-end
-
-def last_digit(user_input)
-  return user_input % 10
-end
-
-puts &quot;Please enter a number: &quot;
-user_input = gets.chomp.to_i
-puts &quot;That's the #{user_input}#{suffix(user_input)} item!&quot;</code></pre>
-    </div>
-    <div class="box">
-      <h4>Ordinal Challenge</h4>
-        <p>
-          This ruby program will convert a plain number
-          to the ordinal of the number. So for example,
-          if the user enters 2, it will display 2nd, if
-          the user enters 3, it will display 3rd, etc.
-        </p>
-    </div>
-    <br class="clear" />
-    <div class="box">
-      <h4>Foobar</h4>
-      <p>
-        This ruby program is an adaptation of a classic technical
-        interview problem which displays sequences
-        of the Foobar pattern.
-    </div>
-    <div class="box">
-<pre><code class="language-ruby">def div_by_3(n)
-  return n % 3 == 0
-end
-
-def div_by_5(n)
-  return n % 5 == 0
-end
-
-current = 0
-puts &quot;How many items do you want to see?&quot;
-stop = gets.chomp.to_i
-
-while current &lt; stop
-  current += 1
-  if div_by_5(current) &amp;&amp; div_by_3(current)
-    puts &quot;Foobar&quot;
-  elsif div_by_3(current)
-    puts &quot;Foo&quot;
-  elsif div_by_5(current)
-    puts &quot;Bar&quot;
-  else
-    puts current
-  end
-end</code></pre>
-    </div>
-    <br class="clear" />
     
     <h3 id="web-apps">Web Apps</h3>
-    <hr class="Snippets-bar" />
-    <div class="box">
-      <h4>Quote Generator</h4>
-      <a onclick="window.open(this.href, '_blank');return false;" href="https://slurpy-xavier-vanier.herokuapp.com/">
-        <img src="splurty.png" title="Click to visit!" class="full-width" /> </a>
-      <p>
-        A database-powered quote generator with a mobile-first
-        design, using the Ruby on Rails framework, HTML, and CSS
-        Uses Git and GitHub for version control, and launched
-        on Heroku.
-      </p>
-    </div>
-    <div class="box">
-      <h4>Yelp Clone</h4>
-      <!--<img src="nomster.png" class="full-width" />-->
-      <p>
-        Coming soon !
-      </p>
-      <p>
-        A Yelp clone that integrates with the Google Maps API
-        and includes features like user comments, star ratings,
-        image uploading, and user authentication.
-      </p>
-    </div>
-    <br class="clear" />
-
-    <div class="box">
-      <h4>Two-Sided Market Place</h4>
-      <!--<img src="flixter.png" class="full-width" />-->
-      <p>
-        Coming soon !
-      </p>
-      <p>
-        A two-sided, video-streaming marketplace platform that
-        features credit card payment capabilities, user role
-        management, complex user interfaces, and advanced
-        database relationships.
-      </p>
-    </div>
-    <div class="box">
-      <h4>Test Driven Development</h4>
-      <!--<img src="grammable.png" class="full-width" />-->
-      <p>
-        Coming soon !
-      </p>
-      <p>
-        An Instagram clone that was built using industry-standard, test-driven
-        development following numerous red/green/refactor cycles.
-      </p>
-    </div>
-    <br class="clear" />
-    <div class="box">
-      <h4>Single Page Todo Application</h4>
-      <!--<img src="todoster.png" class="full-width" />-->
-      <p>
-        Coming soon !
-      </p>
-      <p>
-        This single-page to-do application features a
-        fluid user interface that– by using JavaScript–
-        allows users to rapidly add dynamic content.
-      </p>
-    </div>
+    <hr class="snippets-bar" />
     <div class="box">
       <h4>Agile Team Project</h4>
-      <!--<img src="chess.png" class="full-width" />-->
+      <!--<img src="" class="full-width" />-->
       <p>
         Coming soon !
       </p>
@@ -198,30 +52,240 @@ end</code></pre>
         and feature assignments.
       </p>
     </div>
+    <div class="box">
+      <h4>Personal Professional Blog</h4>
+      <p>
+        Personal Professor's website, featuring blog posts 
+        integrated with CKEditor allowing comments and creation
+        of multimedia lessons.
+      </p>
+      <p>
+        Under development
+      </p>
+      <a onclick="window.open(this.href, '_blank');return false;" href="https://tom-keiser.herokuapp.com/">
+        <img src="tom.png" title="Click to visit!" class="screenshot" /></a>
+    </div>
+    <br class="clear" />
+    <h3 id="firehose">Firehose Project Apps</h3>
+    <hr class="snippets-bar">
+    <div class="box">
+      <h4>Single Page Todo Application</h4>
+      <p>
+        This single-page to-do application features a
+        fluid user interface that– by using JavaScript–
+        allows users to rapidly add dynamic content.
+      </p>
+      <a onclick="window.open(this.href, '_blank');return false;" href="https://todo-xavier-vanier.herokuapp.com/">
+        <img src="todoster.png" title="Click to visit!" class="screenshot" /></a>
+    </div>
+    <div class="box">
+      <h4>Test Driven Development</h4>
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+      </p>
+      <a onclick="window.open(this.href, '_blank');return false;" href="https://grammable-xavier-vanier.herokuapp.com/">
+        <img src="grammable.png" title="Click to visit!" class="screenshot" /></a>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <h4>Two-Sided Market Place</h4>
+      <p>
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+      </p>
+      <a onclick="window.open(this.href, '_blank');return false;" href="https://flixter-xavier-vanier.herokuapp.com/">
+        <img src="greenhouse.png" title="Click to visit!" class="screenshot" /></a>
+    </div>
+    <div class="box">
+      <h4>Yelp Clone</h4>
+      <p>
+        A Yelp clone that integrates with the Google Maps API
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+      </p>
+      <a onclick="window.open(this.href, '_blank');return false;" href="https://nomster-xavier-vanier.herokuapp.com/">
+        <img src="nomster.png" title="Click to visit!" class="screenshot" /></a>
+    </div>
     <br class="clear" />
 
+    <h3 id="code-samples">Code Snippets</h3>
+    <hr class="snippets-bar">
+    <div class="snippet-box">
+      <h4>Binary Tree Sort</h4>
+      <p>This ruby program will sort an array using a binary tree data structure.</p>
+    </div>
+    <div class="snippet-box" id="btree">
+<pre><code class="language-ruby">class BinaryTree
+  attr_accessor :payload, :left, :right
+
+  def initialize(payload, left=nil, right=nil)
+    @payload = payload
+    @left = left
+    @right = right
+  end
+
+  def insert(new_payload)
+    if new_payload &lt; @payload
+      @left.nil? ? @left = BinaryTree.new(new_payload) : @left.insert(new_payload)
+    elsif new_payload &gt; @payload
+      @right.nil? ? @right = BinaryTree.new(new_payload) : @right.insert(new_payload)
+    end
+  end
+end
+
+module BTreeSort
+  def self.sort(array)
+    tree = BinaryTree.new(array.pop)
+    while not array.empty?
+      tree.insert(array.pop)
+    end
+    new_aray = []
+    order(tree) do |node|
+      new_aray &lt;&lt; node.payload
+    end
+    return new_aray
+  end
+
+  def self.order(node, &amp;block)
+    return if node.nil?
+    order(node.left, &amp;block)
+    yield node
+    order(node.right, &amp;block)
+  end
+end
+</code></pre>
+    </div>
+    <br class="clear" />
+    <div class="snippet-box">
+<pre><code class="language-ruby">module Luhn
+  def self.is_valid?(number)
+  digits = number.to_s.chars.map(&amp;:to_i).reverse
+  return digits
+    .map.with_index {|n, i| i.odd? ? n*2 : n}
+    .map {|n| n &gt;= 10 ? n -= 9 : n}
+    .inject(0, :+) % 10 == 0
+  end
+end
+</code></pre>
+    </div>
+    <div class="snippet-box">
+      <h4>Luhn Algorithm</h4>
+        <p>
+          This ruby program verifies that a credit card number is valid
+          following the Luhn Algorithm.
+        </p>
+    </div>
+    <br class="clear" />
+    <div class="snippet-box">
+      <h4>Reverse Linked Lists</h4>
+      <p>
+        This ruby program reverses a linked list either recursively
+        or using a stack data structure.
+      </p>
+    </div>
+    <div class="snippet-box" id="linked-box">
+<pre><code class="language-ruby">class LinkedListNode
+  attr_accessor :value, :next_node
+
+  def initialize(value, next_node=nil)
+    @value = value
+    @next_node = next_node
+  end
+end
+
+def print_values(list_node)
+  if list_node
+    print &quot;#{list_node.value} --&gt; &quot;
+    print_values(list_node.next_node)
+  else
+    print &quot;nil\n&quot;
+    return
+  end
+end
+
+def reverse_list(list, previous=nil)
+  unless list.nil?
+    temp_next_node = list.next_node
+    list.next_node = previous
+    return reverse_list(temp_next_node, list)
+  else
+    return previous
+  end
+end
+
+node1 = LinkedListNode.new(37)
+node2 = LinkedListNode.new(99, node1)
+node3 = LinkedListNode.new(12, node2)
+
+revlist = reverse_list(node3)
+print_values(revlist)
+
+# Using a stack
+class Stack
+  attr_accessor :data
+
+  def initialize
+    @data = nil
+  end
+
+  # Push a value onto the stack
+  def push(value)
+    @data = LinkedListNode.new(value, @data)
+  end
+
+  def pop
+    value = @data.value
+    @data = @data.next_node
+    return value
+  end
+
+end
+
+stack = Stack.new
+stack.push(37)
+stack.push(99)
+stack.push(12)
+
+
+def reverse_stack(stack)
+  new_stack = Stack.new
+  while stack.data != nil
+    new_stack.push(stack.pop)
+  end
+  return new_stack
+end
+
+print_values(stack.data)
+revstack = reverse_stack(stack)
+print_values(revstack.data)</code></pre>
+    </div>
+    <br class="clear" />
     <h3 id="skills-and-tools">Skills &amp; Tools</h3>
-    <hr class="Snippets-bar" />
+    <hr class="snippets-bar" />
     <p class="skills-and-tools">
       Xavier has developed proficiency and expertise
       in the following programming languages and
       comfort with the following tools.
     </p>
     <div class="icons">
-      <!--<img src="github.png" class="icon" />
+      <img src="github.png" class="icon" />
       <img src="rubocop.png" class="icon" />
       <img src="trello.png" class="icon" />
       <img src="slack.png" class="icon" />
-      <img src="codeship.png" class="icon" />
+      <img src="circleci.png" class="icon" />
+      <img src="travisci.png" class="icon" />
 
       <br class="clear" />
-      <img src="skills.png" class="icon" />-->
-      <img src="python-logo.png" class="icon" />
+      <img src="skills.png" class="skill-icon" />
+      <img src="python-logo.png" class="skill-icon" />
     </div>
 
     <div class="contact-me" id="hire-me">
       <h3 class="contact-headline">Contact</h3>
-      <hr class="Snippets-bar" />
+      <hr class="snippets-bar" />
       <p class="contact-info">
         Currently entertaining new opportunities.
         Please get in touch via email:
